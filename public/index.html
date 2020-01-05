@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Bootstrap 4, from LayoutIt!</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="display-4">
+            Group-A
+          </h3>
+          <br />
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="text-info" id="cap1">
+                Abhishek
+              </h3>
+              <div class="dropdown">
+                <button
+                  class="btn btn-primary dropdown-toggle btn-block"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-toggle="dropdown"
+                >
+                  Team-A
+                </button>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                  name="team1"
+                >
+                  <a class="dropdown-item disabled" href="#">Team -B</a>
+                  <a class="dropdown-item" name="Abhishek" href="#">Abhishek</a>
+                  <a class="dropdown-item" name="Kumar" href="#">Kumar</a>
+                  <a class="dropdown-item" name="Naveen" href="#">Naveen</a>
+                  <a class="dropdown-item" name="Lokesh" href="#">Lokesh</a>
+                  <a class="dropdown-item" name="Venkat" href="#">Venkat</a>
+                  <a class="dropdown-item" name="Karish" href="#">Karish</a>
+                  <a class="dropdown-item" name="Jaffer" href="#">Jaffer</a>
+                  <a class="dropdown-item" name="Muthu Anna" href="#"
+                    >Muthu Anna</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <br />
+              <h3 class="text-info" id="cap2">
+                Jaffer
+              </h3>
+              <div class="dropdown">
+                <button
+                  class="btn btn-primary dropdown-toggle btn-block"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-toggle="dropdown"
+                >
+                  Team-B
+                </button>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                  name="team2"
+                >
+                  <a class="dropdown-item disabled" href="#">Team -B</a>
+                  <a class="dropdown-item" name="Abhishek" href="#">Abhishek</a>
+                  <a class="dropdown-item" name="Kumar" href="#">Kumar</a>
+                  <a class="dropdown-item" name="Naveen" href="#">Naveen</a>
+                  <a class="dropdown-item" name="Lokesh" href="#">Lokesh</a>
+                  <a class="dropdown-item" name="Venkat" href="#">Venkat</a>
+                  <a class="dropdown-item" name="Karish" href="#">Karish</a>
+                  <a class="dropdown-item" name="Jaffer" href="#">Jaffer</a>
+                  <a class="dropdown-item" name="Muthu Anna" href="#"
+                    >Muthu Anna</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <br />
+              <form id="match-status" class="row">
+                <label class="col-sm-4">
+                  <input type="radio" name="rdo" value="win" checked /> Win
+                </label>
+                <label class="col-sm-4">
+                  <input type="radio" name="rdo" value="loss" /> Loss
+                </label>
+                <label class="col-sm-4">
+                  <input type="radio" name="rdo" value="draw" /> Draw
+                </label>
+                <input
+                  id="submit-btn"
+                  type="button"
+                  class="btn btn-success btn-block"
+                  value="Submit"
+                />
+              </form>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="display-4">
+                Standings :
+              </h3>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      #
+                    </th>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Played
+                    </th>
+                    <th>
+                      Win
+                    </th>
+                    <th>
+                      Draw
+                    </th>
+                    <th>
+                      Loss
+                    </th>
+                    <th>
+                      Points
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="placeholder"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
