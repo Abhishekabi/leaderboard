@@ -11,7 +11,7 @@ var G_obj = {
   Kumar: { played: 0, win: 0, loss: 0, draw: 0, pts: 0 },
   Naveen: { played: 0, win: 0, loss: 0, draw: 0, pts: 0 },
   Lokesh: { played: 0, win: 0, loss: 0, draw: 0, pts: 0 },
-  "Muthu Anna": { played: 0, win: 0, loss: 0, draw: 0, pts: 0 },
+  Muthu: { played: 0, win: 0, loss: 0, draw: 0, pts: 0 },
   Venkat: { played: 0, win: 0, loss: 0, draw: 0, pts: 0 }
 };
 
@@ -49,7 +49,7 @@ var updateLocalVar = function(cap1, cap2, status) {
     case "loss":
       G_obj[cap2].win = G_obj[cap2].win + 1;
       G_obj[cap1].loss = G_obj[cap1].loss + 1;
-      G_obj[cap1].pts = G_obj[cap1].pts + 2;
+      G_obj[cap2].pts = G_obj[cap2].pts + 2;
       break;
     case "draw":
       G_obj[cap1].draw = G_obj[cap1].draw + 1;
